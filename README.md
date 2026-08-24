@@ -1,4 +1,4 @@
-# MJNestedScrollContentViewController
+# TYNestedScrollContentViewController
 
 一个基于 UIKit 的三层嵌套滚动容器，适用于个人主页、店铺主页、资讯频道等场景：
 
@@ -7,6 +7,12 @@
 - 内容区域支持左右分页切换，每个页面保留独立的纵向滚动内容。
 
 项目使用 Objective-C 编写，示例工程最低支持 iOS 15.0，并依赖 [Masonry](https://github.com/SnapKit/Masonry)。
+
+## Demo
+
+<video src="./demo.mov" controls muted loop width="320"></video>
+
+[直接打开 Demo 视频](./demo.mov)
 
 ## 效果结构
 
