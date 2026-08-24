@@ -1,0 +1,36 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git' #清华镜像
+source 'https://cdn.cocoapods.org/'  # 官方CDN
+#source 'https://github.com/CocoaPods/Specs.git'  # 官方库
+#source 'https://registry.code.tuya-inc.top/tuyaIOS/TYSpecsThird.git' # 三方库源
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '15.0'
+
+target 'TT' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TT
+	pod 'YYModel'
+  pod 'Masonry'
+	
+  target 'TTTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'Kiwi'
+  end
+
+  target 'TTUITests' do
+    # Pods for testing
+  end
+
+end
+
+# Xcode 26 no longer ships libarclite for targets below iOS 12. Keep all
+# generated Pods targets aligned with the app's deployment target.
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+    end
+  end
+end

@@ -1,0 +1,24 @@
+PODS:
+  - Kiwi (3.0.0)
+  - Masonry (1.1.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Kiwi
+  - Masonry
+  - YYModel
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Kiwi
+    - Masonry
+    - YYModel
+
+SPEC CHECKSUMS:
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 2b6ac7834fc374d7e208790038d10f4573e54806
+
+COCOAPODS: 1.17.0
